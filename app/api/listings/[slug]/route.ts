@@ -1,5 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/lib/db";
+import { NextRequest, NextResponse } from 'next/server';
+import { prisma, safeDbOperation, fallbackListings, fallbackReviews } from '@/lib/db';
+import { fetchHostawayReviews } from '@/lib/hostaway-reviews';
+import { fetchGoogleReviews } from '@/lib/google-reviews';
 
 function corsHeaders(origin: string | null) {
   const allowOrigin = origin && /theflex\.global$/.test(new URL(origin).hostname) ? origin : "*";

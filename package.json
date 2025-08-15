@@ -13,7 +13,8 @@
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev -n init",
     "prisma:seed": "prisma db seed",
-    "validate:data": "node scripts/validate-data-mapping.js"
+    "validate:data": "node scripts/validate-data-mapping.js",
+    "setup:vercel-db": "node scripts/setup-vercel-db.js"
   },
   "dependencies": {
     "@prisma/client": "^6.14.0",
