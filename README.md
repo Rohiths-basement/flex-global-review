@@ -1,6 +1,8 @@
 # 🏢 Flex Living Reviews Dashboard
 
 [https://flex-global-review.vercel.app](url) - Live project
+
+
 A comprehensive, production-ready review management system for property management companies. Aggregates reviews from multiple sources (Hostaway, Google Places), provides a management interface for approval workflows, and displays curated reviews on public property pages.
 
 ## ✨ Key Features
