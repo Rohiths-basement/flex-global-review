@@ -1,0 +1,333 @@
+[
+  {
+    "id": "rev005",
+    "type": "host-to-guest",
+    "status": "published",
+    "rating": null,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 10 },
+      { "category": "communication", "rating": 10 },
+      { "category": "respect_house_rules", "rating": 10 }
+    ],
+    "submittedAt": "2020-08-21 22:45:14",
+    "guestName": "Shane Finkelstein",
+    "listingName": "2B N1 A - 29 Shoreditch Heights",
+    "channelId": 2005,
+    "publicReview": "Shane and family are wonderful! Would definitely host again :)",
+    "listingMapId": 1001
+  },
+  {
+    "id": "rev004",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 9,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 8 },
+      { "category": "communication", "rating": 10 }
+    ],
+    "submittedAt": "2021-03-02 12:30:00",
+    "guestName": "Alex Johnson",
+    "listingName": "Shoreditch Heights A",
+    "channelId": 2001,
+    "publicReview": "Great location and very clean. Check-in was smooth.",
+    "listingMapId": 1001
+  },
+  {
+    "id": "rev003",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 7,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 8 },
+      { "category": "communication", "rating": 6 }
+    ],
+    "submittedAt": "2022-01-15 09:15:00",
+    "guestName": "Priya Singh",
+    "listingName": "Camden Loft B",
+    "channelId": 2003,
+    "publicReview": "Nice apartment but a bit noisy on weekends.",
+    "listingMapId": 1002
+  },
+  {
+    "id": "rev002",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": null,
+    "reviewCategory": [],
+    "submittedAt": "2023-07-21 18:00:00",
+    "guestName": "Diego Rivera",
+    "listingName": "Camden Loft B",
+    "channelId": 2005,
+    "publicReview": "Host was responsive. The WiFi could be faster.",
+    "listingMapId": 1002
+  },
+  {
+    "id": "rev001",
+    "type": "host-to-guest",
+    "status": "published",
+    "rating": 10,
+    "reviewCategory": [
+      { "category": "communication", "rating": 10 }
+    ],
+    "submittedAt": "2024-04-10 08:10:00",
+    "guestName": "Maria Lopez",
+    "listingName": "Battersea Riverside C",
+    "channelId": 2005,
+    "publicReview": "Excellent guest, left the place spotless.",
+    "listingMapId": 1003
+  },
+  {
+    "id": "rev006",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 8,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 9 },
+      { "category": "communication", "rating": 8 },
+      { "category": "location", "rating": 10 }
+    ],
+    "submittedAt": "2024-01-15 14:20:00",
+    "guestName": "Emma Thompson",
+    "listingName": "Battersea Riverside C",
+    "channelId": 2001,
+    "publicReview": "Fantastic location in the heart of Shoreditch. Easy access to restaurants and nightlife.",
+    "listingMapId": 1003
+  },
+  {
+    "id": "rev007",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 6,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 7 },
+      { "category": "communication", "rating": 5 }
+    ],
+    "submittedAt": "2023-11-08 16:45:00",
+    "guestName": "Michael Chen",
+    "listingName": "Camden Loft B",
+    "channelId": 2003,
+    "publicReview": "Decent place but check-in process was confusing. Could use better instructions.",
+    "listingMapId": 1002
+  },
+  {
+    "id": "rev008",
+    "type": "host-to-guest",
+    "status": "published",
+    "rating": null,
+    "reviewCategory": [
+      { "category": "respect_house_rules", "rating": 9 },
+      { "category": "communication", "rating": 8 }
+    ],
+    "submittedAt": "2024-02-28 11:30:00",
+    "guestName": "Sarah Wilson",
+    "listingName": "Shoreditch Heights A",
+    "channelId": 2005,
+    "publicReview": "Great guest! Very respectful and left everything in perfect condition.",
+    "listingMapId": 1001
+  },
+  {
+    "id": "rev009",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 10,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 10 },
+      { "category": "communication", "rating": 10 },
+      { "category": "location", "rating": 9 },
+      { "category": "value", "rating": 10 }
+    ],
+    "submittedAt": "2024-03-12 09:15:00",
+    "guestName": "James Rodriguez",
+    "listingName": "Battersea Riverside C",
+    "channelId": 2005,
+    "publicReview": "Absolutely perfect stay! Everything was exactly as described. Highly recommend!",
+    "listingMapId": 1003
+  },
+  {
+    "id": "rev010",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 9,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 9 },
+      { "category": "communication", "rating": 9 },
+      { "category": "checkin", "rating": 10 }
+    ],
+    "submittedAt": "2023-12-05 20:00:00",
+    "guestName": "Lisa Park",
+    "listingName": "Camden Loft B",
+    "channelId": 2001,
+    "publicReview": "Smooth check-in and great communication. The loft is modern and well-equipped.",
+    "listingMapId": 1002
+  },
+  {
+    "id": "rev011",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 7,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 8 },
+      { "category": "location", "rating": 9 },
+      { "category": "value", "rating": 6 }
+    ],
+    "submittedAt": "2024-01-30 13:45:00",
+    "guestName": "David Kumar",
+    "listingName": "Shoreditch Heights A",
+    "channelId": 2003,
+    "publicReview": "Nice riverside location with good transport links. A bit pricey for what you get.",
+    "listingMapId": 1001
+  },
+  {
+    "id": "rev012",
+    "type": "host-to-guest",
+    "status": "published",
+    "rating": null,
+    "reviewCategory": [
+      { "category": "communication", "rating": 10 },
+      { "category": "respect_house_rules", "rating": 10 }
+    ],
+    "submittedAt": "2024-04-22 15:20:00",
+    "guestName": "Anna Petrov",
+    "listingName": "Battersea Riverside C",
+    "channelId": 2005,
+    "publicReview": "Wonderful guest! Very communicative and followed all house rules perfectly.",
+    "listingMapId": 1003
+  },
+  {
+    "id": "rev013",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 8,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 8 },
+      { "category": "communication", "rating": 7 },
+      { "category": "accuracy", "rating": 9 }
+    ],
+    "submittedAt": "2023-09-18 12:10:00",
+    "guestName": "Robert Taylor",
+    "listingName": "Camden Loft B",
+    "channelId": 2001,
+    "publicReview": "Exactly as advertised. Clean and comfortable with good amenities.",
+    "listingMapId": 1002
+  },
+  {
+    "id": "rev014",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 9,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 10 },
+      { "category": "location", "rating": 10 },
+      { "category": "communication", "rating": 8 }
+    ],
+    "submittedAt": "2024-05-03 17:30:00",
+    "guestName": "Maria Santos",
+    "listingName": "Shoreditch Heights A",
+    "channelId": 2003,
+    "publicReview": "Beautiful riverside apartment with stunning views. Perfect for a romantic getaway.",
+    "listingMapId": 1001
+  },
+  {
+    "id": "rev015",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 4 },
+      { "category": "communication", "rating": 6 },
+      { "category": "accuracy", "rating": 5 }
+    ],
+    "submittedAt": "2023-08-14 10:25:00",
+    "guestName": "John Smith",
+    "listingName": "Battersea Riverside C",
+    "channelId": 2003,
+    "publicReview": "Had some issues with cleanliness and the description wasn't entirely accurate.",
+    "listingMapId": 1003
+  },
+  {
+    "id": "rev016",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4.5,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 9 },
+      { "category": "location", "rating": 8 },
+      { "category": "value", "rating": 9 }
+    ],
+    "submittedAt": "2023-12-18 15:30:00",
+    "guestName": "Mark Thompson",
+    "listingName": "Camden Loft B",
+    "channelId": 2004,
+    "publicReview": "Loved the industrial design and spacious layout. Perfect for a weekend getaway.",
+    "listingMapId": 1002
+  },
+  {
+    "id": "rev017",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4,
+    "reviewCategory": [
+      { "category": "location", "rating": 10 },
+      { "category": "communication", "rating": 8 },
+      { "category": "value", "rating": 7 }
+    ],
+    "submittedAt": "2023-11-22 09:45:00",
+    "guestName": "Anna Rodriguez",
+    "listingName": "Shoreditch Heights A",
+    "channelId": 2001,
+    "publicReview": "Good location for business travel. Easy access to the City and Canary Wharf.",
+    "listingMapId": 1001
+  },
+  {
+    "id": "rev018",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 3,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 7 },
+      { "category": "communication", "rating": 5 },
+      { "category": "accuracy", "rating": 6 }
+    ],
+    "submittedAt": "2023-10-10 14:20:00",
+    "guestName": "Chris Evans",
+    "listingName": "Battersea Riverside C",
+    "channelId": 2001,
+    "publicReview": "Nice apartment but had issues with the WiFi during my stay.",
+    "listingMapId": 1003
+  },
+  {
+    "id": "rev019",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 10 },
+      { "category": "communication", "rating": 10 },
+      { "category": "location", "rating": 9 },
+      { "category": "value", "rating": 10 }
+    ],
+    "submittedAt": "2023-09-25 16:15:00",
+    "guestName": "Michelle Lee",
+    "listingName": "Camden Loft B",
+    "channelId": 2005,
+    "publicReview": "Outstanding host and beautiful space! Everything was perfect from check-in to check-out.",
+    "listingMapId": 1002
+  },
+  {
+    "id": "rev020",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4.5,
+    "reviewCategory": [
+      { "category": "location", "rating": 10 },
+      { "category": "cleanliness", "rating": 8 },
+      { "category": "communication", "rating": 9 }
+    ],
+    "submittedAt": "2023-08-15 11:30:00",
+    "guestName": "Robert Davis",
+    "listingName": "Shoreditch Heights A",
+    "channelId": 2004,
+    "publicReview": "Fantastic location in the heart of Shoreditch. Walking distance to great restaurants and bars.",
+    "listingMapId": 1001
+  }
+]
