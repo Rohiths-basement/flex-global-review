@@ -59,21 +59,21 @@ async function setupVercelDatabase() {
           id: "hostaway:rev001",
           source: "hostaway",
           listingId: "cmeb4a49g0001uxl0y2w7eh6g",
-          approved: true,
+          approved: false,
           pinned: true
         },
         {
           id: "hostaway:rev004", 
           source: "hostaway",
           listingId: "cmeb4a49g0000uxl0y2w7eh6f",
-          approved: true,
+          approved: false,
           pinned: false
         },
         {
           id: "hostaway:rev020",
           source: "hostaway", 
           listingId: "cmeb4a49g0000uxl0y2w7eh6f",
-          approved: true,
+          approved: false,
           pinned: true
         }
       ];
