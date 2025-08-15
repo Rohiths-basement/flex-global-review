@@ -149,8 +149,8 @@ export default function EditListingPage({ params }: { params: Promise<{ id: stri
 
       setSuccess("Listing updated successfully!");
       fetchListing(); // Refresh data
-    } catch (err: any) {
-      setError(err.message || 'Failed to update listing');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Failed to update listing');
     } finally {
       setSaving(false);
     }

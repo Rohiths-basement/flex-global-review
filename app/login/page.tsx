@@ -38,7 +38,7 @@ export default function LoginPage() {
       } else {
         setError("Please enter both email and password");
       }
-    } catch (err) {
+    } catch {
       setError("Login failed. Please try again.");
     } finally {
       setIsLoading(false);

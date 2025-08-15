@@ -6,9 +6,13 @@ import Image from "next/image";
 import { useState, useEffect, use } from "react";
 
 async function getData(slug: string) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/listings/${encodeURIComponent(slug)}`, { cache: 'no-store' });
-  if (!res.ok) throw new Error("Failed to load listing");
-  return res.json();
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/listings/${encodeURIComponent(slug)}`, { cache: 'no-store' });
+    if (!res.ok) throw new Error("Failed to load listing");
+    return res.json();
+  } catch (error) {
+    console.error('Failed to load listing:', error instanceof Error ? error.message : error);
+  }
 }
 
 // About Property Component with Read More functionality
@@ -199,7 +203,7 @@ function LocationSection() {
 
 export default function PropertyPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = use(params);
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<{ result?: { listing?: unknown; reviews?: unknown[] } } | null>(null);
   const [loading, setLoading] = useState(true);
   
   useEffect(() => {
@@ -223,7 +227,7 @@ export default function PropertyPage({ params }: { params: Promise<{ slug: strin
   return <PropertyPageContent data={data} slug={resolvedParams.slug} />;
 }
 
-function PropertyPageContent({ data, slug }: { data: any; slug: string }) {
+function PropertyPageContent({ data, slug }: { data: { result?: { listing?: unknown; reviews?: unknown[] } } | null; slug: string }) {
   const decodedSlug = decodeURIComponent(slug);
   const listing = data?.result?.listing;
   type ApprovedReview = {

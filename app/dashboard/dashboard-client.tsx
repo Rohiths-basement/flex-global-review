@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { formatDateUTC } from "@/lib/date";
@@ -48,7 +48,7 @@ export default function DashboardClient() {
   const [listings, setListings] = useState<Listing[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [user, setUser] = useState(getCurrentUser());
+  const [user] = useState(getCurrentUser());
   const [selectedReviews, setSelectedReviews] = useState<Set<string>>(new Set());
   const [bulkLoading, setBulkLoading] = useState(false);
 
@@ -87,7 +87,7 @@ export default function DashboardClient() {
     }
   };
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     setLoading(true);
     setError("");
 
@@ -175,7 +175,7 @@ export default function DashboardClient() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [sourceParam, listings, listingMapId, limitParam, offsetParam, approvedParam, pinnedParam, channelParam, typeParam, ratingMinParam, ratingMaxParam, sortParam, fromParam, toParam, categoryNameParam, categoryMinParam]);
 
   const updateFilter = (key: string, value: string) => {
     const params = new URLSearchParams(searchParams.toString());
@@ -246,47 +246,38 @@ export default function DashboardClient() {
   // Keyboard shortcuts - placed after function declarations
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Only handle shortcuts when not typing in inputs
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement || e.target instanceof HTMLSelectElement) {
-        return;
-      }
-
       if (e.ctrlKey || e.metaKey) {
         switch (e.key) {
           case 'd':
             e.preventDefault();
-            router.push('/dashboard');
+            window.location.href = '/dashboard';
             break;
           case 'l':
             e.preventDefault();
-            router.push('/dashboard/listings');
+            window.location.href = '/properties';
             break;
           case ',':
             e.preventDefault();
-            router.push('/dashboard/settings');
+            window.location.href = '/dashboard/settings';
             break;
           case 'a':
             e.preventDefault();
             if (e.shiftKey) {
-              // Ctrl+Shift+A: Bulk approve selected
-              if (selectedReviews.size > 0) {
-                bulkApprove(true);
-              }
+              bulkApprove(true);
             } else {
-              // Ctrl+A: Select all
               toggleSelectAll();
             }
             break;
         }
-      } else if (e.key === 'Escape') {
-        // Clear selection
+      }
+      if (e.key === 'Escape') {
         setSelectedReviews(new Set());
       }
     };
 
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [router, selectedReviews]);
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [bulkApprove, toggleSelectAll, selectedReviews]);
 
   if (loading) {
     return (

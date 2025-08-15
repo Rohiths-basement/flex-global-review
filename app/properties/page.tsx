@@ -90,7 +90,7 @@ export default function PropertiesPage() {
                   <div className="flex items-center gap-2 mb-4">
                     <StarRating value={property.rating} />
                     <span className="text-sm font-medium text-text-primary">
-                      {property.rating}
+                      London&apos;s most vibrant neighborhoods
                     </span>
                     <span className="text-sm text-text-secondary">
                       ({property.reviewCount} reviews)
@@ -122,7 +122,7 @@ export default function PropertiesPage() {
         {/* CTA Section */}
         <div className="text-center bg-white rounded-2xl p-8 shadow-lg border border-slate-200/50">
           <h2 className="text-2xl font-bold text-text-primary mb-4">
-            Can't find what you're looking for?
+            Can&apos;t find what you&apos;re looking for?
           </h2>
           <p className="text-text-secondary mb-6 max-w-md mx-auto">
             Contact our team to discuss custom accommodations or upcoming properties in your preferred area.
