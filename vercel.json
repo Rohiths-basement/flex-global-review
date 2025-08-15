@@ -1,3 +1,0 @@
-{
-  "buildCommand": "npx prisma generate && npx prisma db push && npm run setup:vercel-db && npm run build"
-}
